@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { tmpdir } from 'node:os';
 import process from 'node:process';
 import { basename, dirname, join } from 'pathe';
-import { version as typiaVersion } from 'typia/package.json';
+import { version as typiaVersion } from 'typia/package.json' assert { type: "json" };
 import type { CacheKey, CachePath, Data, FilePath, ID, Source } from './types.js';
 import { wrap } from './types.js';
 import type { ResolvedOptions } from './options.js';
